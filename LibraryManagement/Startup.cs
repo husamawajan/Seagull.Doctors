@@ -23,7 +23,6 @@ using Microsoft.AspNetCore.Http.Features;
 using Seagull.Doctors.Data.Interfaces;
 using Seagull.Doctors.Data.Repository;
 using Seagull.Tqweemco.Scheduling;
-using Seagull.Doctors.Helper.Scheduling.Demo;
 using Seagull.Doctors.Helper.SignalR.Hub;
 using Hangfire;
 using Seagull.Doctors.Data.Hangfire;
@@ -242,7 +241,6 @@ namespace Seagull.Core
         public void RegisterAppMainRepository(IServiceCollection services)
         {
             // Add scheduled tasks & scheduler
-            services.AddTransient<IScheduledTask, QuoteOfTheDayTask>();
             services.AddScheduler((sender, args) =>
             {
                 Console.Write(args.Exception.Message);

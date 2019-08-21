@@ -12,7 +12,6 @@ using System;
 using Seagull.Doctors.Areas.Admin.ViewModel;
 using AutoMapper;
 using Seagull.Doctors.Helper.SignalR.Hub;
-using Seagull.Doctors.Helper.Scheduling.Demo;
 
 namespace Seagull.Core.Helper.SignalR.SeagullHub
 {
@@ -48,11 +47,6 @@ namespace Seagull.Core.Helper.SignalR.SeagullHub
             _lineHubContext.Clients.All.SendAsync("addNotification", "");
         }
 
-       
-        public void QuoteOfTheDay(QuoteOfTheDay _quoteOfTheDay)
-        {
-            _lineHubContext.Clients.All.SendAsync("showQuoteOfTheDay", _quoteOfTheDay);
-        }
         #endregion
 
     

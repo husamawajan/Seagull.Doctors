@@ -462,9 +462,6 @@
     <Reference Include="CodeBureau">
       <HintPath>..\Package\CodeBureau.dll</HintPath>
     </Reference>
-    <Reference Include="Knet">
-      <HintPath>..\Libraries\KnetWebAPIService\Knet\bin\Knet.dll</HintPath>
-    </Reference>
     <Reference Include="zxing">
       <HintPath>..\Package\ZXing.Net.0.16.4\lib\net461\zxing.dll</HintPath>
     </Reference>
@@ -516,6 +513,6 @@
     </Content>
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
